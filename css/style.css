@@ -1,0 +1,167 @@
+:root{
+    --headings: 'Poppins', sans-serif;
+    --principal: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--principal);
+}
+
+html{
+    font-size: 18px;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+h1,a{
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    max-width: 100%;
+}
+
+.hero{
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: #ebfbff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 2rem 0;
+    /* height: 100vh; */
+}
+
+.hero__nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .hero__nav{
+        flex-direction: row;
+    }
+}
+
+.btn{
+    text-align: center;
+    display: flex;
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 1px 11px -2px rgba(0,0,0,0.75);
+}
+
+.btn a{
+    padding: .5rem 3rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.secondary{
+    max-width: 100%;
+}
+
+span{
+    display: block;
+}
+
+.btn_secondary{
+    background-color:hsl(322, 100%, 66%);
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    margin-bottom: 5rem;
+}
+
+.btn_secondary:hover{
+    background-color:hsl(322, 96%, 78%)
+}
+
+@media (min-width: 768px) {
+    .btn_secondary{
+        width: max-content;
+        /* margin: 0; */
+    }
+}
+
+.btn_secondary a{
+    display: flex;
+    padding: .5rem 3rem;
+    color: white;
+}
+
+
+.started{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .started{
+        text-align: initial;
+    }
+}
+
+.started__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.started__text p{
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .started{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin: 4rem 0;
+    }
+}
+
+.cards{
+    margin: 5rem 2rem;
+    /* text-align: center; */
+}
+
+.card{
+    border: 1px solid rgb(236, 235, 235);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.card__text h1{
+    margin: 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
